@@ -8,7 +8,7 @@ This package provides a Fusion object to simplify common string matching.
 
 Inspired by the [PHP 8 match expression](https://www.php.net/manual/tr/control-structures.match.php).
 
-The goal for this plugin is to provide the given functionality to Neos >= 4.3 
+The goal for this plugin is to provide the given functionality to [Neos CMS](https://www.neos.io) >= 4.3 
 and hopefully add it as a feature to the Neos core in a future Neos release > 6.0.
  
 ## Installation
@@ -45,7 +45,7 @@ rowClass = Neos.Fusion:Case {
       condition = ${q(node).property('columns') == "four"}
       renderer = "d-flex col-12 col-md-6 col-lg-3"
     }
-  }
+}
 ```
 
 With the `Match` object this becomes compact and readable:
@@ -92,7 +92,7 @@ myVar = Shel.Fusion:Match {
 }
 ```
 
-Make sure that all cases return the same type or you will get into trouble 😉   
+Make sure all cases return the same type, or you will get into trouble 😉   
 
 ### Usage in AFX
 
@@ -111,9 +111,9 @@ renderer = afx`
 ## Type checking and error handling
 
 The object expects to find a match. Either one of the provided cases or the default.
-If no case matches and no default is provided an exception will be raised.
+If no case matches and no default has been provided an exception will be raised.
 
-Also the `subject` will be casted to a string. 
+The `subject` will be casted to a string. 
 If a `subject` is provided that cannot be casted to a string it will also cause an error.
 
 The matchable cases also will be cast to a string. So you can use strings or numbers.
