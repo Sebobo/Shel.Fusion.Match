@@ -1,0 +1,32 @@
+{
+  "description": "Match helper to simplify string matching in Neos Fusion",
+  "type": "neos-plugin",
+  "name": "shel/fusion-match",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "Neos CMS",
+    "Fusion"
+  ],
+  "authors": [
+    {
+      "name": "Sebastian Helzle",
+      "email": "support@helzle.it",
+      "homepage": "https://www.helzle.it",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "neos/fusion": ">= 4.3 || dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Shel\\Fusion\\Match\\": "Classes"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Shel.Fusion.Match"
+    }
+  }
+}
+

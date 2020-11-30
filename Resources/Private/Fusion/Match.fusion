@@ -1,0 +1,10 @@
+##
+# Works similar to `match` in PHP 8 https://www.php.net/manual/tr/control-structures.match.php
+# cssClass = Shel.Fusion:Match {
+#     @subject = ${q(node).property('layout')}
+#     left = 'my-module--left'
+#     right = 'my-module--right'
+# }
+prototype(Shel.Fusion:Match) {
+    @class = 'Shel\\Fusion\\Match\\Fusion\\MatchImplementation'
+}
