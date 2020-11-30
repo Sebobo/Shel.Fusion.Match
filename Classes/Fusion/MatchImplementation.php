@@ -11,7 +11,7 @@ use Neos\Fusion\Exception as FusionException;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 
 /**
- * Implementation class for embedding svgs in fusion
+ * Implementation class for matching strings in Fusion and return the matches value
  */
 class MatchImplementation extends AbstractFusionObject
 {
