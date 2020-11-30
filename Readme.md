@@ -71,7 +71,22 @@ rowClass = Shel.Fusion:Match {
     left = 'my-module--left'
     right = 'my-module--right'
 }
-```    
+```                                                                          
+
+### Matches with same values
+
+Sometimes you have a Fusion case that would match to several strings with the same return value.
+You can solve this more explicit like this:
+
+```
+myVar = Shel.Fusion:Match {
+    @subject = ${q(node).property('layout')}
+    left = 'my-module--left'
+    right = 'my-module--right' 
+    top = ${this.left} 
+    bottom = ${this.left} 
+}
+```
 
 ### Other return types
 
@@ -82,7 +97,7 @@ myVar = Shel.Fusion:Match {
     case1 = afx`
         <div>hello world</div>     
     `
-    case2 = 'hello world'
+    case2 = 2
     case3 = Neos.Fusion:Value {
         value = 'hello world'
     }           
@@ -106,7 +121,7 @@ renderer = afx`
         </Shel.Fusion:Match>
     </div>
 `    
-```
+```   
 
 ## Type checking and error handling
 
