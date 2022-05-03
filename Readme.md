@@ -9,7 +9,7 @@ This package provides a Fusion object to simplify common string matching.
 Inspired by the [PHP 8 match expression](https://www.php.net/manual/tr/control-structures.match.php).
 
 The goal for this plugin is to provide the given functionality to [Neos CMS](https://www.neos.io) >= 4.3 
-and hopefully add it as a feature to the Neos core in a future Neos release > 6.0.
+⚠️ The features this package provides is included in Neos 7.3. Therefore this package will not be developed further.
  
 ## Installation
 
